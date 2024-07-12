@@ -40,8 +40,13 @@ class MyAppPage extends StatelessWidget {
     ];
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text("My App"),
+        // backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: const Color(0xFF03a9f4),
+        title: const Text(
+          "My App",
+          style: TextStyle(fontWeight: FontWeight.bold), // ทำให้ title เป็นตัวหนา
+        ),
+        centerTitle: true, // ทำให้ title อยู่ตรงกลาง
       ),
       body: ListView.builder(
           itemCount: datas.length,
